@@ -31,7 +31,7 @@ app.get("/about", (req, res) => {
 
 app.get("/about/*", (req, res) => {
     res.render('404', {
-        errorcomment: "404, Oops this About page couldn't found"
+        errorcomment: "Oops this About page couldn't found"
     });
 });
 
@@ -55,7 +55,7 @@ app.get("/register", (req, res) => {
 
 app.get("*", (req, res) => {
     res.render('404', {
-        errorcomment: "404, Oops this page couldn't found"
+        errorcomment: "Oops this page couldn't found"
     });
 });
 

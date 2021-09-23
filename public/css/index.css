@@ -291,3 +291,11 @@ div.message{
     font-size: 40px;
     margin: auto;
 }
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px - 166px);
+}
