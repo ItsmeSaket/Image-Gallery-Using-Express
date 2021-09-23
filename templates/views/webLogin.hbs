@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+    
+    <link rel="stylesheet" href="/css/LogSignpage.css">
+</head>
+
+<body>
+    {{>header}}
+    <div class="contain1">
+        <i class="fas fa-camera"></i>
+        <h1 class="header">Shutter Up</h1>
+
+        <div class="info">
+            Login to Explore more features of our Website. <br><br>
+            <ul>
+                <li>View full size Image</li>
+                <li>Download Images</li>
+                <li>Save to liked Image</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contain2">
+        <h1>LogIn</h1>
+        <form action="/welcome" autocomplete="on" method="GET">
+            <div class="userbox">
+                <label for="username"><i class="fas fa-user"></i></label>
+                <input name="name" id="username" class="usertxt" placeholder="Email Address or Username" required>
+            </div>
+
+            <div class="pwdbox">
+                <label for="pwd"><i class="fas fa-key"></i></label>
+                <input name="pwd" type="password" id="pwd" class="pwdtxt" minlength="6" placeholder="Enter Password" required>
+            </div>
+
+            <div class="btnbox">
+                <input type="submit" name="submit" value="Login" id="submit">
+            </div>
+        </form>
+
+        <div class="forgot">
+            <a href="#">Forgot Passsword?</a>
+        </div>
+        <hr>
+        <div class="newuser">
+            <h2>New User</h2>
+            <a href="/register">Register</a>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>

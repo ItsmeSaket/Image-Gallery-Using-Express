@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+
+</head>
+
+<body>
+    <div id="main">
+        {{>header}}
+
+        <div id="content">        
+
+            <div class="cover">
+                <img src="https://source.unsplash.com/random/1600x500/?ocean,nature,forest,food" alt="cover">
+
+                <div class="search-box">
+                    <input class="search-txt" type="text" placeholder="Type to Text">
+                    <a class="search-btn" href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="container">
+                    <ul>
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#n01">Nature</a></li>
+                        <li><a href="#f01">Flower</a></li>
+                        <li><a href="#b01">Buildings</a></li>
+                    </ul>
+                </div>
+
+                <div class="blocks">
+                    <h1>Collections</h1>
+                    <div class="block01">
+                        <a href="/Images/page02.jpg"><img src="/Images/page02.jpg" style="width:100%"></a>
+                        <a href="/Images/temple07.jpg"><img src="/Images/temple07.jpg" style="width:100%"></a>
+                        <a href="/Images/trains01.jpg"><img src="/Images/trains01.jpg" style="width:100%"></a>
+                        <a href="/Images/flower03.jpg"><img src="/Images/flower03.jpg" style="width:100%"></a>
+                        <a href="/Images/flower04.jpg"><img src="/Images/flower04.jpg" style="width:100%"></a>
+                        <a href="/Images/plants09.jpg"><img src="/Images/plants09.jpg" style="width:100%"></a>
+                    </div>
+                    <div class="block01">
+                        <a href="/Images/rajtemple05.jpeg"><img src="/Images/rajtemple05.jpeg" style="width:100%"></a>
+                        <a href="/Images/plant02.jpg"><img src="/Images/plant02.jpg" style="width:100%"></a>
+                        <a id="b01" href="/Images/temple06.jpg"><img src="/Images/temple06.jpg" style="width:100%"></a>
+                        <a href="/Images/town01.jpg"><img src="/Images/town01.jpg" style="width:100%"></a>
+                        <a href="/Images/villa2.jpg"><img src="/Images/villa2.jpg" style="width:100%"></a>
+                        <a id="f01" href="/Images/flower20.jpg"><img src="/Images/flower20.jpg" style="width:100%"></a>
+                        <a href="/Images/effiltower.jpg"><img src="/Images/effiltower.jpg" style="width:100%"></a>
+                    </div>
+                    <div class="block01">
+                        <a href="/Images/flower16.jpg"><img src="/Images/flower16.jpg" style="width:100%"></a>
+                        <a href="/Images/plants09.jpg"><img src="/Images/plants09.jpg" style="width:100%"></a>
+                        <a href="/Images/flower13.jpg"><img src="/Images/flower13.jpg" style="width:100%"></a>
+                        <a id="n01" href="/Images/nature05.jpg"><img src="/Images/nature05.jpg" style="width:100%"></a>
+                        <a href="/Images/flower15.jpg"><img src="/Images/flower15.jpg" style="width:100%"></a>
+                        <a href="/Images/flower16.jpg"><img src="/Images/flower16.jpg" style="width:100%"></a>
+                        <a href="/Images/rajtemple01.jpeg"><img src="/Images/rajtemple01.jpeg" style="width:100%"></a>
+                    </div>
+                    <div class="block01">
+                        <a href="/Images/page02.jpg"><img src="/Images/page02.jpg" style="width:100%"></a>
+                        <a href="/Images/temple07.jpg"><img src="/Images/temple07.jpg" style="width:100%"></a>
+                        <a href="/Images/trains01.jpg"><img src="/Images/trains01.jpg" style="width:100%"></a>
+                        <a href="/Images/flower03.jpg"><img src="/Images/flower03.jpg" style="width:100%"></a>
+                        <a href="/Images/flower04.jpg"><img src="/Images/flower04.jpg" style="width:100%"></a>
+                        <a href="/Images/plants09.jpg"><img src="/Images/plants09.jpg" style="width:100%"></a>
+                    </div>
+                </div>
+
+                <div class="container2">
+                    <h1 id="myid1"></h1>
+                </div>
+                <script>
+                    let a;
+                    let myDate;
+                    let myTime;
+                    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                    setInterval(() => {
+                        d = new Date()
+                        myDate = d.toLocaleDateString(undefined, options)
+                        myTime = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+                        document.getElementById("myid1").innerHTML = "Current Time is: " + myTime + "<br>On " + myDate
+                    }, 1000);
+                </script>
+
+            </div>
+
+            <div class="foot" id="foot">
+                <nav>
+                    <a href="#"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                    <a href="https://www.instagram.com/mithilanchal_vibes/?hl=en"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-snapchat"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </nav><br>
+                <p>© 2021 Shutter Up. The Shutter Up design is a trademark of Shutter Up. Owner of this website is Saket
+                    Subham and Ritik Raj.<br>Browse millions of high-quality stock photos, illustrations, and videos.</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

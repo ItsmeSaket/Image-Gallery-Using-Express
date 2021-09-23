@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('/Images/webb.png');
+    background-size: repeat;        
+}
+div.contain1, div.contain2{
+    display: block;
+    float: left;
+    width: 40%;
+}
+div.contain1{
+    margin: 150px;
+    margin-right: 0;
+}
+
+div.contain1 i.fa-camera, div.contain1 h1.header{
+    display: block;
+    float: left;
+}
+div.contain1 i.fa-camera{
+    font-size: 70px;
+    margin-top: 10px;
+    color: orangered;
+}
+div.contain1 h1.header{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 80px;
+    margin-left: 20px;
+}
+div.contain1 div.info{
+    float: left;
+    clear: left;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+div.contain1 div.info ul{
+    padding: 0 80px;
+}
+div.contain2{
+    background-color: white;
+    margin: 90px;
+    width: 500px;
+    min-height: 500px;
+    height: auto;
+    box-shadow: 10px 20px 70px black;
+}
+div.contain2 h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 0 5px 0;
+    border-bottom: 2px solid red;
+}
+div.userbox, div.dobox, div.pwdbox, div.btnbox{
+    margin-top: 20px;
+    text-align: center;
+}
+.usertxt, .pwdtxt{
+    width: 300px;
+    height: 30px;
+    padding: 10px 20px;
+    border: 2px solid teal;
+    border-radius: 25px;
+    background-color: white;
+    outline: none;
+}
+.usertxt:hover, .pwdtxt:hover{
+    background-color: white;
+}
+div.btnbox{
+    margin-top: 40px;
+}
+div.btnbox #submit{
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: orangered;
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+div.btnbox #submit:hover, div.newuser a:hover{
+    background-color: green;
+    box-shadow: 5px 5px 20px black;
+}
+div.btnbox #submit:active, div.newuser a:active{
+    background-color: yellow;
+}
+.forgot{
+    text-align: center;
+    margin: 30px;
+}
+.forgot a{
+    text-decoration: none;
+    color: orangered;
+}
+div.newuser{
+    text-align: center;
+}
+div.newuser h2{
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+div.newuser a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: orangered;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+div.checkbox{
+    margin: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 1400px) {
+    div.contain1, div.contain2{
+        width: 80vw;
+        margin: 10vw;
+    }    
+}
+@media screen and (max-width: 800px) {
+    /* div.contain1, div.contain2{
+        margin: 40px;
+        overflow: auto;
+    } */
+    div.contain1 i.fa-camera, div.contain1 h1.header, div.contain2 h1{
+        margin-top: 0px;
+        font-size: 10vw;
+    }  
+    div.contain1 div.info{
+        font-size: 4vw;
+    }  
+}
+@media screen and (max-width: 600px) {
+    .usertxt, .pwdtxt{
+        width: 50vw;
+    }    
+}

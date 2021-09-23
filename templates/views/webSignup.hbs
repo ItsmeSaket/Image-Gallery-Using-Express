@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+
+    <link rel="stylesheet" href="/css/LogSignpage.css">
+</head>
+
+<body>
+    {{>header}}
+
+    <div class="contain1">
+        <i class="fas fa-camera"></i>
+        <h1 class="header">Shutter Up</h1>
+
+        <div class="info">
+            SignUp to get access to our Exciting features. <br><br>
+            <ul>
+                <li>View full size Image</li>
+                <li>Download Images</li>
+                <li>Save to liked Image</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contain2">
+        <h1>Register</h1>
+
+        <form action="/2_LoginPage.html" autocomplete="off" method="POST">
+            <div class="userbox">
+                <label for="name"><i class="fas fa-user"></i></label>
+                <input id="name" class="usertxt" type="text" placeholder="Enter Full Name" required>
+            </div>
+
+            <div class="userbox">
+                <label for="addr"><i class="fas fa-user"></i></label>
+                <input id="addr" class="usertxt" type="email" placeholder="Enter Email Address" required>
+            </div>
+
+            <div class="dobox">
+                <label for="dob"><i class="far fa-calendar-alt"></i></label>
+                <input id="dob" class="usertxt" type="date" min="1950-01-01" max="2010-01-01" required>
+            </div>
+
+            <div class="pwdbox">
+                <label for="pwd1"><i class="fas fa-key"></i></label>
+                <input id="pwd1" class="pwdtxt" type="password" minlength="6" placeholder="Create Strong Password" required>
+            </div>
+
+            <div class="checkbox">
+                <input id="cbox" type="checkbox" required>
+                <label for="cbox">I agreed to the terms and conditions.</label>
+            </div>
+
+            <div class="btnbox">
+                <input type="submit" name="submit" value="Create Account" id="submit">
+            </div>
+        </form>
+
+        <br><br>
+        <hr>
+        <br>
+
+        <div class="newuser">
+            <h2>Already Registered</h2>
+            <a href="/login">LogIn</a>
+        </div>
+
+        <br><br>
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="#">Our Journey</a>
+    <a href="#">Services</a>
+    <a href="#">Contact Us</a>
+    <a href="/welcome">{{login}}</a>
+</div>
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("content").style.opacity = 0.5;
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("content").style.opacity = 1;
+    }
+</script>
+
+<div class="header">
+    <nav class="navbar" id="navbar">
+        <ul class="mynav">
+            <li class="menu" id="bars" onclick="openNav()">
+                <a class="account" href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </li>
+            <li class="icon">
+                <a href="/">
+                    <i class="fas fa-camera"></i><div>Shutter Up</div>
+                </a>
+            </li>
+            <li class="menu" id="account">
+                <a class="account" href="/login">
+                    <i class="far fa-user-circle"></i>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+</div>
